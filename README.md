@@ -86,7 +86,21 @@ local binary folder (for example `/usr/local/bin/mvim`) and then symlink it:
 
     ln -s /usr/local/bin/mvim vim
 
-Install YouCompleteMe with [Vundle][].
+Install YouCompleteMe with [Vundle][]. 
+
+Add: 
+
+```
+Bundle 'Valloric/YouCompleteMe' 
+```
+
+to your .vimrc file where you configure bundler. After that run the command
+
+```
+:BundleInstall
+```
+
+from the vim command line to fetch the current repository from github.
 
 **Remember:** YCM is a plugin with a compiled component. If you **update** YCM
 using Vundle and the ycm_core library API has changed (happens rarely), YCM will
